@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "vashisht-monorepo",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "concurrently": "^5.0.2"
+  },
+  "scripts": {
+    "client": "yarn workspace client start",
+    "server": "yarn workspace server start",
+    "start": "yarn client & yarn server"
+}
+}
